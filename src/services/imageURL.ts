@@ -1,6 +1,9 @@
 
 const getCroppedImageURL = (url: string) => {
     
+    //return empty string if url is not present
+    if (!url) return '';
+    
     const target = 'media/'
     const index = url.indexOf(target) + target.length;
 
